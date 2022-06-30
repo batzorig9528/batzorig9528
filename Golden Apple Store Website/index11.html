@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Утасны дэлгэрэнгүй Мэдээлэл</title>
+    <link rel="stylesheet" href="CSS/style11.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo"><h1>Golden Apple Store</h1>
+            </div>
+            <div class="nav-links">
+            </div>
+        </nav>
+
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="Images/producs-images/Mobiles/Iphone13 Pro Max.png" class="mobile">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="images/camera.png">
+                    <div>
+                        <h1>Камер</h1>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png">
+                    <div>
+                        <h1>Процессор</h1>
+                        <p>Snapdragon Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png">
+                    <div>
+                        <h1>Дэлгэц</h1>
+                        <p>6.5" Mini-Drop Fullscreen</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png">
+                    <div>
+                        <h1>Баттерай</h1>
+                        <p>5000mAh, 720Hrs Standby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Мэдээлэл</h3>
+            <img src="images/arrow.png" id="downBtn">
+        </div>
+
+    </div>
+
+
+    <script>
+        var circle = document.getElementById("circle");
+        var upBtn = document.getElementById("upBtn");
+        var downBtn = document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+
+        upBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        downBtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+
+
+</body>
+</html>
